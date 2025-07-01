@@ -16,7 +16,7 @@ body {
   
 }
 
-row {
+.row {
   display: table;
 }
 .column {
