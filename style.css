@@ -33,3 +33,16 @@ body {
   box-sizing: border-box;
   width: 33.3%;
   padding: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .column {
+    width: 100%;
+    margin-bottom: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
+  }
+}
