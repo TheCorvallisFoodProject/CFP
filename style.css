@@ -2,3 +2,34 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+
+row {
+  display: table;
+}
+.column {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  display: table-cell;
+  padding: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
+  margin-bottom: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
+}
+
+.column2 {
+  float: left;
+  box-sizing: border-box;
+  width: 33.3%;
+  padding: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
