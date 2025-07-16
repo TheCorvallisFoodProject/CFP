@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: white;
+  background: grey;
   color: #f1f1f1;
    z-index: 9999;
 }
@@ -43,7 +43,15 @@ img {
   padding-bottom: 1.5%;
   border: none;
   cursor: pointer;
+  display:flex;
+  align-items: center;
+  gap: 5px;
 }
+  .dropbtn img {
+    width: auto;
+    height: 10px;
+    object-fit: contain;
+  }
 
 
 .dropdown {
