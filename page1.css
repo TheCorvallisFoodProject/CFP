@@ -38,14 +38,14 @@ img {
 
 
 .dropbtn {
-  font-size: 90%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  font-size: 16px;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 5px;
+  background-color: transparent;
 }
   .dropbtn img {
     width: auto;
