@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: grey;
+  background: lightgray;
   color: #f1f1f1;
    z-index: 9999;
 }
@@ -24,6 +24,7 @@ body {
     align-items: center; 
     justify-content: space-between;
     width: 100%;
+  gap: 70%;
   }
 
 .marginpractice {
@@ -40,13 +41,13 @@ img {
 
 .dropbtn {
   font-size: 16px;
-  padding: 8px 16px;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
   background-color: transparent;
+  justify-content: flex-end;
 }
   .dropbtn img {
     width: auto;
@@ -92,4 +93,10 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+  .dropbtn img {
+    width: auto;
+    height: 15px;
+    object-fit: contain;
+  }
 }

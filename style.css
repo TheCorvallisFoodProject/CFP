@@ -8,11 +8,13 @@ html {
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: lightgray;
+  background: #9AB291;
   color: #f1f1f1;
    z-index: 9999;
-  
-  
+}
+.row10 {
+  background-color: blue;
+
 }
 body {
   margin: 0px;
@@ -21,6 +23,18 @@ body {
   overflow-wrap: break-word;
 }
 
+.maintitle h2 {
+  font-size: 2rem;
+  background-color: #0D2E1C;
+  background-image: linear-gradient(to top, #1f6e42 0%, #2c955b 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 0px;
+
+}
 .logo img {
   width: 5%;
   height: auto;
@@ -41,8 +55,17 @@ body {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.dropbtn img {
+  width: auto;
+  height: 10px;
+  object-fit: contain;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -66,6 +89,13 @@ body {
   display: block;
 }
 
+p {
+  font-family: Arial, sans-serif;    /* A common web-safe font */
+  font-size: 16px;                    /* A typical base paragraph size */
+  line-height: 1.6;                   /* Good readability, 1.5–2 is often recommended :contentReference[oaicite:0]{index=0} */
+  color: #000;                         /* Default text color (black) */
+}
+
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
@@ -86,6 +116,15 @@ body {
   object-position: center; /* Chooses which part to crop — center is default */
 }
 
+.involvedbtn {
+  text-align: center;
+  background-color: #3e8e41;
+  font-size: .5rem;
+  cursor: pointer;
+   justify-content: flex-end;
+  color: white;
+  margin-left: 10px;
+}
 .slide {
   position: absolute;
   width: 100%;
@@ -136,11 +175,41 @@ body {
   width: 33.3%;
   display: flex;
   flex-direction: column;
-  padding: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
-  margin-bottom: clamp(1px, calc(18px + 72 * (100vw - 400px) / 1064), 15px);
+  padding-left: clamp(6px, calc(16px + 50 * (100vw - 400px) / 1064), 80px);
+  padding-right: clamp(6px, calc(16px + 50 * (100vw - 400px) / 1064), 80px);
+  padding-top: clamp(6px, calc(16px + 50 * (100vw - 400px) / 1064), 80px);
+  padding-bottom: clamp(6px, calc(16px + 90 * (100vw - 400px) / 1064), 80px);
+  
+  /*margin-bottom: clamp(1px, calc(18px + 72 * (100vw - 400px) / 1064), 15px);*/
   
 }
 
+
+/* THIS IS IF I WANT TO ADD A ROW TO ANY GIVEN COLUMN */
+.mainslide {
+  height: 100%; /* Adjust as needed */
+}
+.column21 {
+  float: left;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  padding-top: clamp(6px, calc(16px + 10 * (100vw - 400px) / 1064), 80px);
+  padding-bottom: clamp(6px, calc(16px + 10 * (100vw - 400px) / 1064), 80px);
+  padding-left: clamp(6px, calc(16px + 10 * (100vw - 400px) / 1064), 80px);
+  padding-right: clamp(6px, calc(16px + 10 * (100vw - 400px) / 1064), 80px);
+  /*margin-bottom: clamp(1px, calc(18px + 72 * (100vw - 400px) / 1064), 15px);*/
+}
+
+.mainslide img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  padding-top: clamp(1px, calc(18px + 72 * (100vw - 400px) / 1064), 15px);
+}
 .column3 {
   float: left;
   box-sizing: border-box;
@@ -160,6 +229,12 @@ body {
   padding-top: 8px;
 
 }
+
+
+
+
+
+
 /* Media query for responsive design */
 @media screen and (max-width: 650px) {
   .row {
@@ -175,7 +250,10 @@ body {
     width: 100%;
     margin-bottom: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
   }
-
+  .column21 {
+    width: 100%;
+    margin-bottom: clamp(8px, calc(18px + 72 * (100vw - 400px) / 1064), 90px);
+  }
   .column3{
     width: 100%;
     margin-bottom: 0px;
@@ -194,6 +272,11 @@ body {
   }
   .responsive-text {
     display: none;
+  }
+  .dropbtn img {
+    width: auto;
+    height: 15px;
+    object-fit: contain;
   }
 }
 
