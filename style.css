@@ -8,14 +8,33 @@ html {
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: #9AB291;
+  background: #CDEFC0;
   color: #f1f1f1;
    z-index: 9999;
 }
 .row10 {
   background-color: blue;
-
 }
+
+.joinbtn {
+  display: inline-block;
+  background-color: #3e8e41;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.joinbtn:hover {
+  background-color: #367a39;
+}
+
+
 body {
   margin: 0px;
   box-sizing: border-box;
